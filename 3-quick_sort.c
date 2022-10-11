@@ -9,6 +9,9 @@
  */
 void quick_sort(int *array, size_t size)
 {
+	if (size == 0 || array == NULL)
+		return;
+
 	sort_arr(array, 0, size - 1, size);
 }
 
